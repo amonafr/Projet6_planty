@@ -1,3 +1,4 @@
+/*** Menu****/
 #menu-item-95 a
 {
 	background-color: #E0B9B4 !important; 
@@ -12,39 +13,45 @@
     margin-right: 0;
     margin-top: 0 !important;
 }
+
 #menu-item-95 a:hover
 {
 	background-color: #C02E44 !important;
-    color:white;
-    
+    color:white; 
 }
 
 #planty-admin a:hover
-    {
-        font-size: 13px !important;
-        font-weight: 700;
-        line-height: 15.6px;
-        text-align: left;
-    }
-
-#menu-item-62 a:hover
 {
-    /*font-size:10px;*/
     font-size: 13px !important;
     font-weight: 700;
     line-height: 15.6px;
     text-align: left;
-    
 }
+
+#planty-admin
+{
+    color:black;
+}
+
+#menu-item-62 a:hover
+{
+    font-size: 13px !important;
+    font-weight: 700;
+    line-height: 15.6px;
+    text-align: left; 
+}
+
+/*** precommande  quantite****/
 .qt
 {
-    width: 42px;
+    width: 43px;
     height: 65px;
     text-align: center;
     margin: auto;
     padding: 0;
     
 }
+
 .qt input
 {
     appearance: none;
@@ -53,7 +60,8 @@
 }
 
 input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-outer-spin-button 
+{
     -webkit-appearance: none;
     margin: 0;
 }
@@ -64,7 +72,6 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;  
     flex-direction: row;
     column-gap: 50px;
-   /* align-items: flex-start;*/
 }
 .form-commande label
 {
@@ -73,7 +80,6 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 400;
     color:white;
     margin-bottom: 20px;
-    
 }
 
 .form-commande .colonne1
@@ -92,7 +98,6 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-top: 25px !important;
     padding-bottom: 20px !important;
     width: 100%;
-    /*width: 383px;*/
 }
 .form-commande .colonne2 input
 {
@@ -100,7 +105,6 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 7px !important;
     padding-top: 25px !important;
     padding-bottom: 20px !important;
-    /*width: 383px;*/
     width: 100%;
 }
 .form-commande .trait-vertical
@@ -108,13 +112,10 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 1px;
     height: 420px;
     background-color: white;
-    /*margin ;*/
 }
 .form-global .bouton-commander
 {
     text-align: center;
-   /* width: 940px;*/
-   /*width: 100%;*/
     margin-top: 44px;
     padding: 0;
     margin-left:0;
@@ -137,11 +138,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 30px;
     font-weight: 700;
     color:white; 
-     margin-bottom: 29px;
-}
-.planty-admin
-{
-    color:black;
+    margin-bottom: 29px;
 }
 
 .form-global
@@ -154,17 +151,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .bouton-commander p
 {
-    width: 23%;
+    width: 198px;
     margin:auto;
 }
-
-
-
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) 
     {
-
         .form-commande
         {
             width: 100%;
@@ -172,11 +165,10 @@ input[type="number"]::-webkit-outer-spin-button {
         }
         .form-global
         {
-            width: 100%;
-           
+            width: 100%; 
         }
     }
-
+ 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) 
 {
@@ -186,34 +178,31 @@ input[type="number"]::-webkit-outer-spin-button {
         flex-direction: column;
         gap: 50px;
         width: 100%;
-       /* align-items: flex-start;*/
-    }
-.colonne1
-{
-    display:flex;
-    flex-direction: column;
-    
-}
-.colonne2
-{
-    display:flex;
-    flex-direction: column;
-    
-}
-    .bouton-commander 
-    {
-        width: 23%;
-        margin:auto;
     }
 
+    .colonne1
+    {
+        display:flex;
+        flex-direction: column;   
+    }
+
+    .colonne2
+    {
+        display:flex;
+        flex-direction: column;
+    
+    }
+    
     .form-commande .colonne1
     {
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
     
     .form-commande .colonne2
     {
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
 
     .form-commande .trait-vertical
@@ -222,27 +211,21 @@ input[type="number"]::-webkit-outer-spin-button {
         height: 1px;
         background-color: white;
         margin:auto;
-        
     }
-    .bouton-commander p
-    {
-        width: 50%;
-        margin:auto;
-
-    }
-    
+   
     .bouton-commander
     {
         width: 100%;
     }
+
     .form-global
     {
         width: 100%;
     }
+
     .form-commande .titre
     {
         font-size: 25px;
         margin-bottom: 29px;
-        }
-    
+     }
 }

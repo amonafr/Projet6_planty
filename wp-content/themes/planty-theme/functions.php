@@ -6,8 +6,6 @@ function theme_enqueue_styles()
 }
 add_action('wp_enqueue_scripts','theme_enqueue_styles');
 
-
-
 add_filter( 'wp_nav_menu_items', 'afficher_menu_admin', 10, 2 );
 
 function afficher_menu_admin( $items, $args ) {
@@ -24,6 +22,7 @@ function afficher_menu_admin( $items, $args ) {
 }
 
 remove_filter( 'the_content', 'wpautop' );
+
 // code qui marche  également
 /*function afficher_menu($args) 
 {
